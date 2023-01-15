@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/7a3837d6a3.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <h1>Rock, paper, scissors, lizard, spock game!</h1>
     <div id="choices">
-        <button id="rock" onclick="play('rock')">Rock</button>
-        <button id="paper" onclick="play('paper')">Paper</button>
-        <button id="scissors" onclick="play('scissors')">Scissors</button>
-        <button id="lizard" onclick="play('lizard')">Lizard</button>
-        <button id="spock" onclick="play('spock')">Spock</button>
+        <button id="rock" onclick="play('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
+        <button id="paper" onclick="play('paper')"><i class="fa-regular fa-hand"></i></button>
+        <button id="scissors" onclick="play('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
+        <button id="lizard" onclick="play('lizard')"><i class="fa-regular fa-hand-lizard"></i></button>
+        <button id="spock" onclick="play('spock')"><i class="fa-regular fa-hand-spock"></i></button>
     </div>
-    <div id="result"></div>
+    <div id="result">Results</div>
     <div id="scoreboard">
         <div id="user-score">User: <span id="user-score-value">0</span></div>
         <div id="computer-score">Computer: <span id="computer-score-value">0</span></div>
-        <button id="reset" onclick="resetScore()">Reset game</button>
+    </div>
+    <div id="reset">
+        <button onclick="resetScore()"><i class="fa-solid fa-arrows-rotate"></i> Reset game</button>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
