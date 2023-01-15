@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/7a3837d6a3.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Rock, paper, scissors, lizard, spock game!</title>
 </head>
 
 <body>
+    <section>
     <h1>Rock, paper, scissors, lizard, spock game!</h1>
     <div id="choices">
-        <button id="rock" onclick="play('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
-        <button id="paper" onclick="play('paper')"><i class="fa-regular fa-hand"></i></button>
-        <button id="scissors" onclick="play('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
-        <button id="lizard" onclick="play('lizard')"><i class="fa-regular fa-hand-lizard"></i></button>
-        <button id="spock" onclick="play('spock')"><i class="fa-regular fa-hand-spock"></i></button>
+        <button id="rock" onclick="play(this.id)"><i class="fa-regular fa-hand-back-fist"></i></button>
+        <button id="paper" onclick="play(this.id)"><i class="fa-regular fa-hand"></i></button>
+        <button id="scissors" onclick="play(this.id)"><i class="fa-regular fa-hand-scissors"></i></button>
+        <button id="lizard" onclick="play(this.id)"><i class="fa-regular fa-hand-lizard"></i></button>
+        <button id="spock" onclick="play(this.id)"><i class="fa-regular fa-hand-spock"></i></button>
     </div>
     <div id="result">Results</div>
     <div id="scoreboard">
@@ -27,6 +28,7 @@
         <button id="reset" onclick="resetScore()"><i class="fa-solid fa-arrows-rotate"></i> Reset game</button>
     </div>
     <script src="assets/js/script.js"></script>
+    </section>
 </body>
 
 </html>
