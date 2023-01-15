@@ -1,5 +1,5 @@
 section {
-    background-color: aqua;
+    background-color: lightsteelblue;
 }
 
 h1 {
@@ -54,6 +54,14 @@ h1 {
     margin: 0 auto;
 }
 
-.highlight {
-    background-color: #4CAF50;
-  }
+.highlight-winner {
+    background-color: lightgreen;
+}
+
+.highlight-loser {
+    background-color: lightcoral;
+}
+
+.tie {
+    background-color: yellow;
+}

@@ -20,7 +20,7 @@ function resetScore() {
     computerScoreValue.innerHTML = computerScore;
     let result = document.getElementById("result");
     result.innerHTML = "Here we go again!";
-  }
+}
 
 /*
 This code executes basic game logic
@@ -37,7 +37,7 @@ function play(userChoice) {
     // Remove highlight class from all buttons
     let buttons = document.getElementsByTagName("button");
     for (let i = 0; i < buttons.length; i++) {
-    buttons[i].classList.remove("highlight");
+        buttons[i].classList.remove("highlight-winner", "highlight-loser", "tie");
     }
 
     // Add highlight class to current user and computer choices
@@ -49,9 +49,12 @@ function play(userChoice) {
         alert("Game over! Start again!");
         return;
     }
-   
+
     if (userChoice === computerChoice) {
         result.innerHTML = "It's a tie!";
+        userChoiceBtn.classList.add("tie");
+        computerChoiceBtn.classList.add("tie");
+
     } else if (
         (userChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
         (userChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
@@ -62,10 +65,13 @@ function play(userChoice) {
         result.innerHTML = "You win! " + userChoice + " beats " + computerChoice + ".";
         userScore++;
         userScoreValue.innerHTML = userScore;
+        userChoiceBtn.classList.add("highlight-winner");
+        computerChoiceBtn.classList.add("highlight-loser");
     } else {
         result.innerHTML = "You lose! " + computerChoice + " beats " + userChoice + ".";
         computerScore++;
         computerScoreValue.innerHTML = computerScore;
+        userChoiceBtn.classList.add("highlight-loser");
+        computerChoiceBtn.classList.add("highlight-winner");
     }
 }
-
