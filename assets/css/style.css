@@ -30,6 +30,7 @@ h1 {
 #result {
     display: grid;
     justify-content: center;
+    margin-top: 1em;
 }
 
 #scoreboard {
@@ -40,8 +41,12 @@ h1 {
     align-items: center;
 }
 
-#reset {
+#reset-div {
     display: grid;
     justify-content: center;
 }
 
+#reset {
+    text-align: center;
+    margin: 0 auto;
+}
