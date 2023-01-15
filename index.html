@@ -7,7 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Rock, paper, scissors, lizard, spock game!</h1>
+    <div id="choices">
+        <button id="rock" onclick="play('rock')">Rock</button>
+        <button id="paper" onclick="play('paper')">Paper</button>
+        <button id="scissors" onclick="play('scissors')">Scissors</button>
+        <button id="lizard" onclick="play('lizard')">Lizard</button>
+        <button id="spock" onclick="play('spock')">Spock</button>
+    </div>
+    <div id="result"></div>
+    <div id="scoreboard">
+        <div id="user-score">User: <span id="user-score-value">0</span></div>
+        <div id="computer-score">Computer: <span id="computer-score-value">0</span></div>
+        <button id="reset" onclick="resetScore()">Reset game</button>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
