@@ -58,7 +58,7 @@ h1 {
 }
 
 #scoreboard {
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Atma', cursive;
     font-size: 2rem;
     display: grid;
     justify-content: center;
@@ -76,14 +76,17 @@ h1 {
 }
 
 #reset {
+    font-size: 1.5em;
+    font-family: 'Atma', cursive;
     text-align: center;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 /* Selection highlight styling */
 
 .highlight-winner {
-    background-color: lightgreen;
+    background-color: rgb(28, 167, 28);
 }
 
 .highlight-loser {
@@ -111,11 +114,11 @@ h1 {
     }
 
     #result {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     #scoreboard {
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 
@@ -132,10 +135,10 @@ h1 {
     }
 
     #result {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     #scoreboard {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
