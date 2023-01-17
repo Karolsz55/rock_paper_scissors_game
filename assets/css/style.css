@@ -77,12 +77,17 @@ h1 {
     justify-content: center;
 }
 
-#reset {
+#reset-btn {
     font-size: 1.5em;
     font-family: 'Atma', cursive;
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    transform: scale(1.2);
 }
 
 /* Selection highlight styling */
