@@ -1,17 +1,30 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Atma&family=Courgette&display=swap');
+
+
+body {
+    background-color: #AFC2D5;
+}
+
+/* Game box styling */
+
 #game {
     height: 70%;
     width: 70%;
     margin: 0 auto;
-    background-color: lightsteelblue;
+    background-color: #DFEFCA;
     border: 2px solid black;
     border-radius: 50px;
 }
 
 h1 {
+    padding: 20px 0 20px 0;
+    font-family: 'Courgette', cursive;
     text-align: center;
     font-size: 3rem;
-
 }
+
+/* Game buttons & scoreboard styling */
 
 #choices {
     display: grid;
@@ -25,7 +38,7 @@ h1 {
     font-size: 3rem;
     width: 100px;
     height: 100px;
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
@@ -37,20 +50,27 @@ h1 {
 }
 
 #result {
+    font-family: 'Atma', cursive;
+    font-size: 2rem;
     display: grid;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 50px;
 }
 
 #scoreboard {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 2rem;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 #reset-div {
+    margin-top: 50px;
+    margin-bottom: 20px;
     display: grid;
     justify-content: center;
 }
@@ -60,11 +80,14 @@ h1 {
     margin: 0 auto;
 }
 
+/* Selection highlight styling */
+
 .highlight-winner {
     background-color: lightgreen;
 }
 
 .highlight-loser {
+    opacity: 0.5;
     background-color: lightcoral;
 }
 
@@ -90,6 +113,10 @@ h1 {
     #result {
         font-size: 18px;
     }
+
+    #scoreboard {
+        font-size: 18px;
+    }
 }
 
 /* Tablet devices (landscape mode) */
@@ -105,6 +132,10 @@ h1 {
     }
 
     #result {
-        font-size: 22px;
+        font-size: 24px;
+    }
+
+    #scoreboard {
+        font-size: 24px;
     }
 }
