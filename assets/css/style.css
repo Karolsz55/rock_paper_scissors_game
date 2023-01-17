@@ -1,5 +1,10 @@
-section {
+#game {
+    height: 70%;
+    width: 70%;
+    margin: 0 auto;
     background-color: lightsteelblue;
+    border: 2px solid black;
+    border-radius: 50px;
 }
 
 h1 {
@@ -9,14 +14,15 @@ h1 {
 }
 
 #choices {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
 }
 
 #choices button {
     font-size: 3rem;
-    margin: 10px;
-    padding: 10px 20px;
     width: 100px;
     height: 100px;
     border: 2px solid black;
@@ -64,4 +70,41 @@ h1 {
 
 .tie {
     background-color: yellow;
+}
+
+/* Media queries */
+
+/* Mobile devices */
+
+@media (max-width: 480px) {
+    #choices {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    #choices button {
+        margin: 5px 0;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
+
+/* Tablet devices (landscape mode) */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #choices {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #choices button {
+        margin: 5px 0;
+    }
+
+    #result {
+        font-size: 22px;
+    }
 }

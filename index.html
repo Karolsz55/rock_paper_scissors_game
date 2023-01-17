@@ -10,25 +10,27 @@
 </head>
 
 <body>
-    <section>
-    <h1>Rock, paper, scissors, lizard, spock game!</h1>
-    <div id="choices">
-        <button title="Rock" id="rock" onclick="play(this.id)"><i class="fa-regular fa-hand-back-fist"></i></button>
-        <button title="Paper" id="paper" onclick="play(this.id)"><i class="fa-regular fa-hand"></i></button>
-        <button title="Scissors" id="scissors" onclick="play(this.id)"><i class="fa-regular fa-hand-scissors"></i></button>
-        <button title="Lizard" id="lizard" onclick="play(this.id)"><i class="fa-regular fa-hand-lizard"></i></button>
-        <button title="Spock" id="spock" onclick="play(this.id)"><i class="fa-regular fa-hand-spock"></i></button>
+    <div id="game">
+        <h1>Rock, paper, scissors, lizard, spock game!</h1>
+        <div id="choices">
+            <button title="Rock" id="rock" onclick="play(this.id)"><i class="fa-regular fa-hand-back-fist"></i></button>
+            <button title="Paper" id="paper" onclick="play(this.id)"><i class="fa-regular fa-hand"></i></button>
+            <button title="Scissors" id="scissors" onclick="play(this.id)"><i
+                    class="fa-regular fa-hand-scissors"></i></button>
+            <button title="Lizard" id="lizard" onclick="play(this.id)"><i
+                    class="fa-regular fa-hand-lizard"></i></button>
+            <button title="Spock" id="spock" onclick="play(this.id)"><i class="fa-regular fa-hand-spock"></i></button>
+        </div>
+        <div id="result">Results</div>
+        <div id="scoreboard">
+            <div id="user-score">User: <span id="user-score-value">0</span></div>
+            <div id="computer-score">Computer: <span id="computer-score-value">0</span></div>
+        </div>
+        <div id="reset-div">
+            <button id="reset" onclick="resetScore()"><i class="fa-solid fa-arrows-rotate"></i> Reset game</button>
+        </div>
+        <script src="assets/js/script.js"></script>
     </div>
-    <div id="result">Results</div>
-    <div id="scoreboard">
-        <div id="user-score">User: <span id="user-score-value">0</span></div>
-        <div id="computer-score">Computer: <span id="computer-score-value">0</span></div>
-    </div>
-    <div id="reset-div">
-        <button id="reset" onclick="resetScore()"><i class="fa-solid fa-arrows-rotate"></i> Reset game</button>
-    </div>
-    <script src="assets/js/script.js"></script>
-    </section>
 </body>
 
 </html>

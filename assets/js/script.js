@@ -34,16 +34,17 @@ function play(userChoice) {
     userChoiceBtn = document.getElementById(userChoice);
     computerChoiceBtn = document.getElementById(computerChoice);
 
-    // Remove highlight class from all buttons
+    /* Remove highlight-winner, highlight-loser, 
+    tie class from all buttons 
+    */
     let buttons = document.getElementsByTagName("button");
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].classList.remove("highlight-winner", "highlight-loser", "tie");
     }
 
-    // Add highlight class to current user and computer choices
-    userChoiceBtn.classList.add("highlight");
-    computerChoiceBtn.classList.add("highlight");
-
+    /* Add highlight-winner, highlight-loser or 
+    tie class to current user and computer choices 
+    */
 
     if (userScore >= 5 || computerScore >= 5) {
         alert("Game over! Start again!");
