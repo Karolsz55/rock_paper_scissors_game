@@ -16,6 +16,12 @@ It provides a quick dose of entertainment, is lightweight, fun and easy to under
 ***
 ![Game layout](assets/images/game-layout.png)
 
+- Responsive design
+    * The game has good scaling across multiple device types.
+    * All functionality is maintained throughout all device types.
+***
+![Responsive design](assets/images/responsive-design.png) 
+
 - Buttons
     * There are several functioning buttons in the game. 5 main buttons are responsible for player choices.
     * They are interacting on mouse hover using a transition animation to increase their size.
