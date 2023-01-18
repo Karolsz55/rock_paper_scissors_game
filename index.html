@@ -14,13 +14,13 @@
     <div id="game">
         <h1>Rock, paper, scissors, lizard, spock game!</h1>
         <div id="choices">
-            <button title="Rock" id="rock" onclick="play(this.id)"><i class="fa-regular fa-hand-back-fist"></i></button>
-            <button title="Paper" id="paper" onclick="play(this.id)"><i class="fa-regular fa-hand"></i></button>
-            <button title="Scissors" id="scissors" onclick="play(this.id)"><i
+            <button aria-label="Rock" title="Rock" id="rock" onclick="play(this.id)"><i class="fa-regular fa-hand-back-fist"></i></button>
+            <button aria-label="Paper" title="Paper" id="paper" onclick="play(this.id)"><i class="fa-regular fa-hand"></i></button>
+            <button aria-label="Scissors" title="Scissors" id="scissors" onclick="play(this.id)"><i
                     class="fa-regular fa-hand-scissors"></i></button>
-            <button title="Lizard" id="lizard" onclick="play(this.id)"><i
+            <button aria-label="Lizard" title="Lizard" id="lizard" onclick="play(this.id)"><i
                     class="fa-regular fa-hand-lizard"></i></button>
-            <button title="Spock" id="spock" onclick="play(this.id)"><i class="fa-regular fa-hand-spock"></i></button>
+            <button aria-label="Spock" title="Spock" id="spock" onclick="play(this.id)"><i class="fa-regular fa-hand-spock"></i></button>
         </div>
         <div id="result">Results</div>
         <div id="scoreboard">
@@ -28,7 +28,7 @@
             <div id="computer-score">Computer: <span id="computer-score-value">0</span></div>
         </div>
         <div id="reset-div">
-            <button id="reset-btn" onclick="resetScore()"><i class="fa-solid fa-arrows-rotate"></i> Start again!</button>
+            <button aria-label="Reset" id="reset-btn" onclick="resetScore()"><i class="fa-solid fa-arrows-rotate"></i> Start again!</button>
         </div>
         <script src="assets/js/script.js"></script>
     </div>
