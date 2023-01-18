@@ -57,7 +57,6 @@ function play(userChoice) {
     if (userScore >= 5 || computerScore >= 5) {
         alert("Game over! Start again!");
         return;
-        5
     }
 
     if (userChoice === computerChoice) {
